@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+cd PythonScripts
 
 python3 networks.py ../CSV_example/networks.csv
 python3 role.py ../CSV_example/role.csv
@@ -22,5 +22,5 @@ python3 deletepolicy.py policy_NEW_list.txt
 
 sleep 2
 rm *.txt
-
+rm *.json
 

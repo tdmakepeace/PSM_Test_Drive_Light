@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./clean.sh
+cd PythonScripts
 
 
 python3 networks.py ../CSV_example/networks.csv
@@ -27,5 +27,5 @@ python3 importrolebinding.py rolebinding_csv.json
 #  python3 importworkloadgroup.py workloadgroup_csv.json
 
 sleep 2
+rm *.txt
 rm *.json
-

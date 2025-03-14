@@ -364,7 +364,37 @@ runnotes()
 
 psmnotes()
 {
-	echo ""
+		echo """
+		The following notes will take you through the setup and clean down scripts for PSM.
+		The scripts are based on the fact you have already set up the CX and PSM for base functionality.
+		and is focussed on the pod build and resets.
+			
+		The first thing you need to do is edit the logindetails.py file in the PSM\PythonScripts folder.
+		The second thing is to set the variable parameters in the CSV_example folder. - Examples give and are expect to 
+		work for most customers.
+			
+		In the PSM\PythonScripts folder are all the indervidual python scripts that are called from the shell scripts
+		
+		build.sh - takes the contents of the CSV files and builds the JSON and TXT payloads.
+		           It then runs the json files against the PSM to build the objects.
+		           if the objects exists they will return 404 or 414 errors.
+							
+		clean.sh - takes the contents of the CSV files and builds the JSON and TXT payloads.
+		           It then runs the txt files against the PSM to delete the objects.
+		           if the objects does not exists they will return 404 or 414 errors.
+							
+		rebuild.sh - takes the taks of clean and build and runs them to reset all the pods.				
+							
+	
+		
+	
+	"""
+	
+	
+	
+	read -p "Once complete hit enter"
+	
+	
 }
 
 testcode()
@@ -404,12 +434,15 @@ wget -O ELK_Install_Ubuntu_script.sh  https://raw.githubusercontent.com/tdmakepe
 \"
 
 Options with regards VMWare setup :
+
 D - Download and clone the Git repo for the testdrive. 
 B - Base setup of the powershell enviroment.
 I - Install the modules required in powershell.
-R - Run notes on using the tools. 
+R - Read notes on using the tools. 
 
 Option with regards to PSM managment :
+
+P - Read notes on using the tools. 
 
 
 x - to exit
