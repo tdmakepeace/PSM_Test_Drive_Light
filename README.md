@@ -18,16 +18,18 @@ Option E - Installs the ELK, the logstash passer and dashboards. \
 2. Run the following option to clone the repo and do some base setup.
 ```
 
-wget -O TestDrive_Install_script.sh  https://raw.githubusercontent.com/tdmakepeace/PSM_Test_Drive_Lightrefs/heads/main/TestDrive_Install_script.sh && chmod +x TestDrive_Install_script.sh  &&  ./TestDrive_Install_script.sh
+wget -O TestDrive_Install_script.sh  https://raw.githubusercontent.com/tdmakepeace/PSM_Test_Drive_Light/refs/heads/main/TestDrive_Install_script.sh && chmod +x TestDrive_Install_script.sh  &&  ./TestDrive_Install_script.sh
 
 
 ```
 
 
+3. The script is written to guide you through the journey. 
 
+For VMware - Options D, B, and I are expected to be one off processes.  Option R you will return to to remind you of the options.
 
-cd testdrive/Setup
-cd PowerShell_On_Linux
+For PSM - Option P is the noted on how to run the scripts, they can be run from the linux terminal either inside or outside powershell.
+ 
 
 
 
