@@ -82,6 +82,11 @@ download()
 		echo $testdrivever >installedversion.txt
 
 		git pull
+		
+		cd PSM
+		chmod +x *.sh
+		cd ..
+		
 
 
 
