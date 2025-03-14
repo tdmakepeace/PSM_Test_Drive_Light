@@ -88,6 +88,49 @@ download()
 
 	}
 
+basesetup()
+{
+		cd /$rootfolder/$basefolder
+		cd ESX
+		git clone https://github.com/vmware/PowerCLI-Example-Scripts.git
+
+		if [ "$os" == "Ubuntu" ]; then 
+				###################################
+				# Prerequisites
+
+				# Update the list of packages
+				sudo apt-get update
+
+				# Install pre-requisite packages.
+				sudo apt-get install -y wget apt-transport-https software-properties-common
+
+				# Get the version of Ubuntu
+				source /etc/os-release
+
+				# Download the Microsoft repository keys
+				wget -q https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb
+
+				# Register the Microsoft repository keys
+				sudo dpkg -i packages-microsoft-prod.deb
+
+				# Delete the Microsoft repository keys file
+				rm packages-microsoft-prod.deb
+
+				# Update the list of packages after we added packages.microsoft.com
+				sudo apt-get update
+
+				###################################
+				# Install PowerShell
+				sudo apt-get install -y powershell
+
+				
+		elif [ "$os" == "Red" ]; then
+				updatesred()
+				
+		fi 
+
+	
+	}
 
 
 
@@ -125,9 +168,10 @@ If the ELK stack has not been installed, exit the script and deploy the ELK stac
 
 Options: 
 D - Download and clone the Git repo for the testdrive. 
+B - Base setup of the powershell enviroment.
   		
   	"
-	echo "D or "
+	echo "D or B "
 	read x
   x=${x,,}
   
@@ -151,6 +195,10 @@ This should be a one off process do not repeat unless you have cancelled it for 
 				  done
   		
 
+		elif [  $x ==  "b" ]; then
+			
+					echo "(select option 'A')  - sometime it take time to run."
+					basesetup
 				  
 
 		elif [  $x ==  "t" ]; then

@@ -15,12 +15,17 @@ Option B - sets up all the dependencies and installs base services and requires 
 Option E - Installs the ELK, the logstash passer and dashboards. \
 
 
-2. Clone this Repo and then run the following option.
+2. Run the following option to clone the repo and do some base setup.
+```
 
 wget -O TestDrive_Install_script.sh  https://raw.githubusercontent.com/tdmakepeace/PSM_Test_Drive_Lightrefs/heads/main/TestDrive_Install_script.sh && chmod +x TestDrive_Install_script.sh  &&  ./TestDrive_Install_script.sh
 
 
 ```
+
+
+
+
 cd testdrive/Setup
 cd PowerShell_On_Linux
 
