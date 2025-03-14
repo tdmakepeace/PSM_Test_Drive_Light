@@ -1,0 +1,11 @@
+name,ingress-security-policy,egress-security-policy,maximum-cps,maximum-sessions,connection-tracking-mode,ip-fragments-forwarding
+vrf1,None,None,0,0,enable,disable
+vrf2,None,None,0,0,enable,disable
+vrf3,None,None,0,0,enable,disable
+vrf4,None,None,0,0,enable,disable
+vrf5,None,None,0,0,enable,disable
+vrf6,None,None,0,0,enable,disable
+vrf7,None,None,0,0,enable,disable
+vrf8,None,None,0,0,enable,disable
+vrf9,None,None,0,0,enable,disable
+vrf10,None,None,0,0,enable,disable

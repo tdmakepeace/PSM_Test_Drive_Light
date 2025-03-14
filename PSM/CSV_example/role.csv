@@ -1,0 +1,11 @@
+name,rolebinding,user,vrf,vlanpre,policypre
+vrf1role,vrf1role_binding,vrf1_user,vrf1,vlan1,vrf1_vlan1
+vrf2role,vrf2role_binding,vrf2_user,vrf2,vlan2,vrf2_vlan2
+vrf3role,vrf3role_binding,vrf3_user,vrf3,vlan3,vrf3_vlan3
+vrf4role,vrf4role_binding,vrf4_user,vrf4,vlan4,vrf4_vlan4
+vrf5role,vrf5role_binding,vrf5_user,vrf5,vlan5,vrf5_vlan5
+vrf6role,vrf6role_binding,vrf6_user,vrf6,vlan6,vrf6_vlan6
+vrf7role,vrf7role_binding,vrf7_user,vrf7,vlan7,vrf7_vlan7
+vrf8role,vrf8role_binding,vrf8_user,vrf8,vlan8,vrf8_vlan8
+vrf9role,vrf9role_binding,vrf9_user,vrf9,vlan9,vrf9_vlan9
+vrf10role,vrf10role_binding,vrf10_user,vrf10,vlan10,vrf10_vlan10
