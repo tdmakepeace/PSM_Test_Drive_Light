@@ -64,6 +64,13 @@ download()
 				
 		fi 
 		cd /
+		
+		if [ ! -d "$rootfolder" ]; then
+				sudo mkdir $rootfolder
+  			chown $real_user:$real_user $rootfolder
+		fi
+
+
 		cd /$rootfolder/
 		git clone $gitlocation
 		cd 	$basefolder
@@ -430,7 +437,7 @@ do
 ### The script should be run as the first user create as part of the install, and uses SUDO for the deployment process.                                            ###
 
 
-If the ELK stack has not been installed, exit the script and deploy the ELK stack but running the single script installer. At minimun the base option of the ELK install needs to have been completed.
+If the ELK stack has not been installed, exit the script and deploy the ELK stack by running the single script installer. At minimun the base option of the ELK install needs to have been completed.
 
 \"
 
