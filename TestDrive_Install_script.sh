@@ -161,13 +161,22 @@ instruction()
 		\" 
 
 		cd /pensandotools/PSM_Test_Drive_Light/ESX
-		Install-Module -Name VMware.PowerCLI -Confirm:$false
-		cd "PowerCLI-Example-Scripts\Modules\VMware.vSphere.SsoAdmin"
-		Import-Module .\VMware.vSphere.SsoAdmin.psd1
-	
+		Install-Module -Name VMware.PowerCLI -Confirm:\$false
+		cd \"PowerCLI-Example-Scripts/Modules/VMware.vSphere.SsoAdmin\"
+		Import-Module ./VMware.vSphere.SsoAdmin.psd1 	
 		cd ../../../
 		
 		\"
+		
+		You will need to import the unsigned module everytime 
+		\" 
+
+		cd \"PowerCLI-Example-Scripts/Modules/VMware.vSphere.SsoAdmin\"
+		Import-Module ./VMware.vSphere.SsoAdmin.psd1 
+		cd ../../../
+		
+		\"
+				
 		
 	
 	"""
