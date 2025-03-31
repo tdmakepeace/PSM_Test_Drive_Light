@@ -125,3 +125,4 @@ ESX/PowerCLI-Example-Scripts/*
 ESX/TestDrive.ps1
 axis/*
 accounts/*
+PSM/PythonScripts/logindetails.py

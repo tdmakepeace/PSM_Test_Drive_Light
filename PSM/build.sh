@@ -1,6 +1,28 @@
 #!/bin/bash
 
+
+
+
+
 cd PythonScripts
+
+file="logindetails.py"
+
+if [ ! -e "$file" ]; then
+		echo "What is the PSM host IP"
+		read psm
+		echo "enter the username for PSM (admin account)"
+		read userpsm
+		echo "enter the password"	
+		read passpsm
+		
+		echo "PSM_IP = 'https://"$psm"'
+username = '"$userpsm"'
+password = '"$passpsm"'
+		" > $file
+		
+sleep 1
+fi
 
 
 python3 networks.py ../CSV_example/networks.csv
