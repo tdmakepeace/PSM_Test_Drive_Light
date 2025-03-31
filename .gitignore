@@ -120,3 +120,8 @@ log/*
 *.tmp
 
 
+# Test Drive Light Project 
+ESX/PowerCLI-Example-Scripts/*
+ESX/TestDrive.ps1
+axis/*
+accounts/*

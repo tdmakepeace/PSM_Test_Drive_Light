@@ -68,6 +68,8 @@ $location = Get-Datacenter -Name $DCName
 echo $location
  # New-VDSwitch -Name $VmDS -Location $location -MaxPorts 60 -NumUplinkPorts 4 -Mtu 9000 -WithoutPortGroups
 New-VDSwitch -Name $VmDS -Location $location  -MaxPorts 512 -NumUplinkPorts 4 -Mtu 9000 -LinkDiscoveryProtocol "LLDP" -LinkDiscoveryProtocolOperation Listen
+# New-VDSwitch -Name $VmDS -Location $location  -MaxPorts 512 -NumUplinkPorts 4 -Mtu 9000 -LinkDiscoveryProtocol "LLDP" -LinkDiscoveryProtocolOperation Listen -Version "6.6.0"
+
 $vds = Get-VDSwitch $VmDS
 
 

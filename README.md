@@ -1,6 +1,8 @@
 ## TestDrive Light Set up ...
 
 
+ 
+
 Based on Ubuntu 20.04, 22.04 or 24.04, but should work on other Ubuntu versions. 
 
 1. Run the ELK install and setup on the host first.
@@ -29,9 +31,19 @@ wget -O TestDrive_Install_script.sh  https://raw.githubusercontent.com/tdmakepea
 For VMware - Options D, B, and I are expected to be one off processes.  Option R you will return to to remind you of the options.
 
 For PSM - Option P is the noted on how to run the scripts, they can be run from the linux terminal either inside or outside powershell.
+
+
+# Notes
+
+
+Expectations: 
+ Vcentre server version 7.+
+ ESXi Host 7.+
  
-
-
-
+ If you are using ESXi Hosts version 6.7, then you need to add the verison to the end of the Distributed switch line.
+ There is an example on line 71 of the ESXI-testdrive-Build1.ps1 file.
+ 
+ 
 ```
+
 
